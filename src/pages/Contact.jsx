@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
+
+/**
+ * Componente para mostrar un formulario de contacto con validación de datos.
+ * @returns {JSX.Element} JSX Elemento que representa el formulario de contacto.
+ */
 export const Contact = () => {
+  // Estado para almacenar los datos del formulario
   const [formData, setFormData] = useState({
     nombre: '',
     correo: ''
   });
 
+  // Estado para almacenar el valor del checkbox de confirmación
   const [confirmData, setConfirmData] = useState(false);
 
+  /**
+   * Manejador de cambios en los campos del formulario.
+   * @param {Object} e Evento de cambio en el campo del formulario.
+   */
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
@@ -15,10 +26,18 @@ export const Contact = () => {
     }));
   };
 
+  /**
+   * Manejador de cambios en el checkbox de confirmación.
+   * @param {Object} e Evento de cambio en el checkbox de confirmación.
+   */
   const handleConfirmChange = (e) => {
     setConfirmData(e.target.checked);
   };
 
+  /**
+   * Manejador del envío del formulario.
+   * @param {Object} e Evento de envío del formulario.
+   */
   const handleSubmit = (e) => {
     e.preventDefault();
     // Verificar si el checkbox ha sido marcado
@@ -29,6 +48,7 @@ export const Contact = () => {
     // Aquí puedes realizar la lógica para enviar los datos del formulario
     console.log(formData);
   };
+
   return (
     <>
       <div className="container mt-4 d-flex">
