@@ -4,7 +4,8 @@ import '../css/contact.css';
 export const Contact = () => {
   const [formData, setFormData] = useState({
     nombre: '',
-    correo: ''
+    correo: '',
+    mensaje: '' // Nuevo campo para el mensaje
   });
 
   const [confirmData, setConfirmData] = useState(false);
@@ -34,7 +35,7 @@ export const Contact = () => {
     <div className="container mt-4 fs-5">
       <div className="row justify-content-center justify-content-md-between">
         <div className="col-md-6 mb-md-0 mb-4 form-container">
-          <h1 title_eat>Formulario de Contacto:</h1>
+          <h1 title="Formulario de Contacto">Formulario de Contacto:</h1>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="nombre" className="form-label"><i className="fa-solid fa-pen-clip"></i> Nombre</label>
@@ -57,6 +58,18 @@ export const Contact = () => {
                 name="correo"
                 value={formData.correo}
                 onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="mensaje" className="form-label"><i className="fa-solid fa-pen"></i> Mensaje</label>
+              <textarea
+                className="form-control"
+                id="mensaje"
+                name="mensaje"
+                value={formData.mensaje}
+                onChange={handleChange}
+                rows="5"
                 required
               />
             </div>
@@ -88,3 +101,4 @@ export const Contact = () => {
     </div>
   );
 };
+
