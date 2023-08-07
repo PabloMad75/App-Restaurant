@@ -2,6 +2,7 @@
   color: white;
   background-color: #FFB84C;
   border-radius: 25px;
+  /* transition: background-color 0.1s; */
 }
 
 /* Estilo para el ícono 'fa-house' cuando el enlace está en hover */
@@ -13,7 +14,7 @@
   color: white;
   background-color: #8EA7E9;
   border-radius: 25px;
-  transition: color 0.3s;
+  /* transition: color 0.3s; */
 }
 
 .custom-caption {
