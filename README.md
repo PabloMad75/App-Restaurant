@@ -4,8 +4,8 @@
 
 Este proyecto tuvo como objetivo desarrollar una **aplicación web para un restaurante** que permita a los usuarios obtener información sobre el restaurante, ponerse en contacto, reservar una mesa y ver el menú. La aplicación esta **adaptada para su uso en dispositivos móviles**.
 
-## Tecnologías utilizadas:![Icono de Markdown](https://raw.githubusercontent.com/markdown-it/markdown-it-icons/master/png/32x32/markdown.png)
-Fueron utulizadas tecnologías como:
+## Tecnologías utilizadas::computer:
+Fueron utilizadas tecnologías como:
 - **React**
 - **Node**
 - **Vite**.
