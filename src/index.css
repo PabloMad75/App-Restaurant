@@ -1,1 +1,10 @@
-/*  */
+/* body {
+  background-image: url("/background/verdu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+body{
+  background-color: #F6F4EB;
+}

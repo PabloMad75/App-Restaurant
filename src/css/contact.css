@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 /* Agrega estos estilos a tu hoja de estilos CSS */
 .embed-responsive {
   position: relative;
@@ -5,6 +7,11 @@
   width: 100%;
   padding: 0;
   overflow: hidden;
+}
+
+.title_eat{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .embed-responsive::before {

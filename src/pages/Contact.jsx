@@ -34,7 +34,7 @@ export const Contact = () => {
     <div className="container mt-4 fs-5">
       <div className="row justify-content-center justify-content-md-between">
         <div className="col-md-6 mb-md-0 mb-4 form-container">
-          <h1>Formulario de Contacto:</h1>
+          <h1 title_eat>Formulario de Contacto:</h1>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="nombre" className="form-label"><i className="fa-solid fa-pen-clip"></i> Nombre</label>

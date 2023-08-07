@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 /* Estilos para el contenedor de la galería */
 .container {
   max-width: 1200px;
@@ -38,6 +40,13 @@
   height: auto;
   border-radius: 10px;
 }
+
+.title_eat{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+
 .article-info {
   color: white;
   font-family: inherit;

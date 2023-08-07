@@ -7,7 +7,7 @@ export const Us = () => {
   return (
     <>
       <div className="container mt-4">
-        <h2 className="mb-4">Bienvenido a San Pedro</h2>
+        <h2 className="mb-4 title_eat">Bienvenido a San Pedro</h2>
         <p className='fs-5' style={paragraphStyle}>
           En San Pedro, llevamos ofreciendo calidad y tradición gastronómica junto al mar desde 1932. Somos un restaurante especializado en mariscos y carnes, con una selección cuidadosamente elaborada de los mejores platos de la región.
         </p>
@@ -32,7 +32,7 @@ export const Us = () => {
           <span className="fecha-publicacion">
             03 de febrero 2023
           </span>
-          <h2 className="titulo_torta">
+          <h2 className="title_eat">
             Pato San Pedro.
           </h2>
           <p className="article-info">
@@ -44,7 +44,7 @@ export const Us = () => {
           <span className="fecha-publicacion">
             03 de febrero 2023
           </span>
-          <h2 className="titulo_torta">
+          <h2 className="title_eat">
             Salmón San Pedro.
           </h2>
           <p className="article-info">Descubre el encanto del salmón austral, un plato sublime que combina la frescura del mar con la riqueza de sabores. Delicadamente preparado y cocinado a la perfección, su carne jugosa y suave se deshace en tu paladar. Una experiencia gastronómica inolvidable.
@@ -55,8 +55,8 @@ export const Us = () => {
           <span className="fecha-publicacion">
             03 de febrero 2023
           </span>
-          <h2 className="titulo_torta">
-            Curry consome.
+          <h2 className="title_eat">
+            Curry consomé.
           </h2>
           <p className="article-info">Descubre la rica y aromática experiencia del consomé de curry. Sabores exóticos que te transportarán a tierras lejanas. Este plato combina la intensidad del curry con la suavidad del consomé, brindando una explosión de sabores en cada sorbo.
           </p>
@@ -66,7 +66,7 @@ export const Us = () => {
           <span className="fecha-publicacion">
             03 de febrero 2023
           </span>
-          <h2 className="titulo_torta">
+          <h2 className="title_eat">
             Lasagna San Pietro.
           </h2>
           <p className="article-info">
@@ -78,7 +78,7 @@ export const Us = () => {
           <span className="fecha-publicacion">
             03 de febrero 2023
           </span>
-          <h2 className="titulo_torta">
+          <h2 className="title_eat">
           Porchetta della Nonna.
           </h2>
           <p className="article-info">Deléitate con el exquisito "Porchetta della Nonna," una maravilla culinaria que combina tierno cerdo asado con una seductora salsa italiana. Sumérgete en una explosión de sabores mediterráneos, donde hierbas frescas y especias se unen para crear una experiencia gastronómica inolvidable.
@@ -89,7 +89,7 @@ export const Us = () => {
           <span className="fecha-publicacion">
             03 de febrero 2023
           </span>
-          <h2 className="titulo_torta">
+          <h2 className="title_eat">
           Asado Pampas.
           </h2>
           <p className="article-info">Descubre nuestro plato estrella, "Asado Pampas". Saborea jugosos cortes de carne de vacuno a la plancha, impregnados con una exquisita mezcla de especias secretas que despiertan tus papilas gustativas. Una experiencia gastronómica única que te transportará a los sabores de Argentina.
