@@ -8,7 +8,8 @@ Este proyecto tuvo como objetivo desarrollar una **aplicación web para un resta
 Fueron utilizadas tecnologías como:
 - **React**
 - **Node**
-- **Vite**.
+- **Vite**
+- **Firebase**
 Lo anterior, para crear una experiencia atractiva y funcional.
 
 ## El Proyecto incluye:  📜
