@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
   return (
     <>
-      <footer className="py-2 my-2">
+      <footer className="py-4 mt-4 bg-body-tertiary">
         <ul className="nav justify-content-center border-bottom pb-2 mb-2">
           <li className="nav-item"><a href="/" className="nav-link px-2 text-body-secondary">Inicio</a></li>
           <li className="nav-item"><a href="nosotros" className="nav-link px-2 text-body-secondary">Nosotros</a></li>

@@ -1,11 +1,31 @@
 .nav-link:hover {
   color: white;
-  background-color: #dfa878;
+  background-color: #FFB84C;
   border-radius: 25px;
 }
 
 /* Estilo para el ícono 'fa-house' cuando el enlace está en hover */
-.nav-link:hover .fa-house {
+/* .nav-link:hover .fa-house {
   color: white;
+} */
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: white;
+  background-color: #8EA7E9;
+  border-radius: 25px;
+  transition: color 0.3s;
 }
 
+.custom-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Ajusta el valor alfa (0.6) para cambiar la opacidad del fondo */
+  border-radius: 25px; /* Puedes ajustar el radio del borde para darle un efecto redondeado al fondo */
+  padding: 10px; /* Puedes ajustar el espaciado interno para separar el contenido del fondo */
+  color: white; /* Cambia el color del texto a blanco para que contraste con el fondo */
+}
+
+/* Media query para viewport menor a 990px */
+@media (max-width: 990px) {
+  .fa-solid {
+    padding-left: 20px;
+  }
+}
