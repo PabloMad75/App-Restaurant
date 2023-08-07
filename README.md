@@ -23,7 +23,6 @@ Lo anterior, para crear una experiencia atractiva y funcional.
 
 3. **Datos de Ubicación y Correo Electrónico 📬**
    - Sección con la dirección del restaurante y su ubicación en el mapa (Google Maps).
-   - Dirección de correo electrónico para consultas y reservas.
 
 ## Características Opcionales 🌟
 
