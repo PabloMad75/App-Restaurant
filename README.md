@@ -4,7 +4,7 @@
 
 Este proyecto tuvo como objetivo desarrollar una **aplicación web para un restaurante** que permita a los usuarios obtener información sobre el restaurante, ponerse en contacto, reservar una mesa y ver el menú. La aplicación esta **adaptada para su uso en dispositivos móviles**.
 
-## Tecnologías utilizadas::computer:
+## Tecnologías utilizadas: :computer:
 Fueron utilizadas tecnologías como:
 - **React**
 - **Node**
