@@ -9,7 +9,7 @@ Fueron utilizadas tecnologías como:
 - **React**
 - **Node**
 - **Vite**
-- **Firebase**
+- **Firebase**.
 
 Lo anterior, para crear una experiencia atractiva y funcional.
 
