@@ -42,4 +42,4 @@ Lo anterior, para crear una experiencia atractiva y funcional.
    - Sección del sitio web dedicada a un blog, donde se publicarán artículos relacionados con el restaurante.
    - Cada artículo debe tener una imagen destacada, título, fecha de publicación y contenido completo del artículo.
 
-![Descripción de la imagen](/Restaurant-pablomad.netlify.png)
+![Descripción de la imagen](/public/Restaurant-pablomad.netlify.png)
