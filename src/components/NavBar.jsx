@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import '../css/navbar.css'
 
 export const NavBar = () => {
   return (
@@ -15,7 +16,7 @@ export const NavBar = () => {
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav gap-3">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link inactive-link" to="/" activeClassName="">
                   <i className="fa-solid fa-house"></i> Inicio
                 </NavLink>
               </li>

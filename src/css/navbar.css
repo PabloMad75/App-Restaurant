@@ -1,0 +1,11 @@
+.nav-link:hover {
+  color: white;
+  background-color: #dfa878;
+  border-radius: 25px;
+}
+
+/* Estilo para el ícono 'fa-house' cuando el enlace está en hover */
+.nav-link:hover .fa-house {
+  color: white;
+}
+
