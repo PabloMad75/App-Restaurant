@@ -8,18 +8,18 @@ export const Us = () => {
     <>
       <div className="container mt-4">
         <h2 className="mb-4">Bienvenido a San Pedro</h2>
-        <p style={paragraphStyle}>
+        <p className='fs-5' style={paragraphStyle}>
           En San Pedro, llevamos ofreciendo calidad y tradición gastronómica junto al mar desde 1932. Somos un restaurante especializado en mariscos y carnes, con una selección cuidadosamente elaborada de los mejores platos de la región.
         </p>
-        <p style={paragraphStyle}>
+        <p className='fs-5'style={paragraphStyle}>
           Nuestro compromiso es brindarte una experiencia culinaria única, donde podrás disfrutar de sabores auténticos y frescos, acompañados de una cuidada selección de finos vinos que realzarán cada bocado.
         </p>
-        <p>
-          <strong>Horario de Atención:</strong><br />
+        <p className='fs-4 '>
+          <strong >Horario de Atención:</strong><br />
           Lunes a Domingo<br />
           12:00 - 21:00 hrs
         </p>
-        <p style={paragraphStyle}>
+        <p className='fs-5' style={paragraphStyle}>
           Ven y únete a nuestra historia culinaria mientras te sumerges en la deliciosa combinación de sabores y la calidez de nuestro ambiente costero.
         </p>
         <p className="fs-3">
