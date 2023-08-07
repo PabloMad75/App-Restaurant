@@ -10,6 +10,7 @@ Fueron utilizadas tecnologías como:
 - **Node**
 - **Vite**
 - **Firebase**
+
 Lo anterior, para crear una experiencia atractiva y funcional.
 
 ## El Proyecto incluye:  📜
