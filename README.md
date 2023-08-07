@@ -4,9 +4,12 @@
 
 Este proyecto tuvo como objetivo desarrollar una **aplicación web para un restaurante** que permita a los usuarios obtener información sobre el restaurante, ponerse en contacto, reservar una mesa y ver el menú. La aplicación esta **adaptada para su uso en dispositivos móviles**.
 
-## Tecnologías utilizadas:
+## Tecnologías utilizadas:![Icono de Markdown](https://raw.githubusercontent.com/markdown-it/markdown-it-icons/master/png/32x32/markdown.png)
 Fueron utulizadas tecnologías como:
-**React**, **Node** y **Vite** para crear una experiencia atractiva y funcional.
+- **React**
+- **Node**
+- **Vite**.
+Lo anterior, para crear una experiencia atractiva y funcional.
 
 ## El Proyecto incluye:  📜
 
@@ -38,7 +41,3 @@ Fueron utulizadas tecnologías como:
 4. **Blog con Artículos 📚**
    - Sección del sitio web dedicada a un blog, donde se publicarán artículos relacionados con el restaurante.
    - Cada artículo debe tener una imagen destacada, título, fecha de publicación y contenido completo del artículo.
-
-## Notas Finales 📝
-
-Este proyecto busca crear una experiencia atractiva y fácil de usar para los clientes del restaurante, proporcionando información relevante y opciones interactivas. La aplicación web será estéticamente agradable y garantizará una navegación intuitiva. Utilizaremos tecnologías como **React**, **Node** y **Vite** para lograr una implementación eficiente y moderna. ¡Esperamos que este proyecto satisfaga las necesidades del restaurante y brinde una gran experiencia a los usuarios! 🎉
