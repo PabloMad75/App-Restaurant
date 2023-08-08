@@ -39,6 +39,15 @@
   background-color: #FF9B9B;
 }
 
+.featured-title{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  color: #ff5500;
+  text-transform: uppercase;
+}
+
 .main__product img {
   max-width: 100%;
   height: auto;

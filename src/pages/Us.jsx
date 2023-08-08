@@ -30,7 +30,7 @@ export const Us = () => {
         <article className="main__product">
           <img src="/carrousel/turkey.jpg" alt="Muffin Arcuch" />
           <span className="fecha-publicacion">
-            03 de febrero 2023
+            Carnes blancas.
           </span>
           <h2 className="title_eat">
             Pato San Pedro.
@@ -42,7 +42,7 @@ export const Us = () => {
         <article className="main__product">
           <img src="/carrousel/salmon.jpg" alt="Muffin Arcuch" />
           <span className="fecha-publicacion">
-            03 de febrero 2023
+            Pescados frescos.
           </span>
           <h2 className="title_eat">
             Salmón San Pedro.
@@ -53,7 +53,7 @@ export const Us = () => {
         <article className="main__product">
           <img src="/carrousel/curry.jpg" alt="Muffin Arcuch" />
           <span className="fecha-publicacion">
-            03 de febrero 2023
+            Ricas Sopas.
           </span>
           <h2 className="title_eat">
             Curry consomé.
@@ -64,7 +64,7 @@ export const Us = () => {
         <article className="main__product">
           <img src="/carrousel/meal.jpg" alt="Muffin Arcuch" />
           <span className="fecha-publicacion">
-            03 de febrero 2023
+            Pastas italianas.
           </span>
           <h2 className="title_eat">
             Lasagna San Pietro.
@@ -76,7 +76,7 @@ export const Us = () => {
         <article className="main__product">
           <img src="/carrousel/beef.jpg" alt="Muffin Arcuch" />
           <span className="fecha-publicacion">
-            03 de febrero 2023
+            Carnes de Cerdo.
           </span>
           <h2 className="title_eat">
           Porchetta della Nonna.
@@ -87,7 +87,7 @@ export const Us = () => {
         <article className="main__product">
           <img src="/carrousel/food.jpg" alt="Muffin Arcuch" />
           <span className="fecha-publicacion">
-            03 de febrero 2023
+            Carnes de vacuno.
           </span>
           <h2 className="title_eat">
           Asado Pampas.
