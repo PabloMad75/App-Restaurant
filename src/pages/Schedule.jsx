@@ -1,7 +1,8 @@
+import { ReservationForm } from "../components/ReservationForm"
 export const Schedule = () => {
   return (
     <>
-    <h1>Reservas</h1>
+    <ReservationForm />
     </>
   )
 }
