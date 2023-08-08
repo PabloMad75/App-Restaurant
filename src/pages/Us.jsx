@@ -7,7 +7,7 @@ export const Us = () => {
   return (
     <>
       <div className="container mt-4">
-        <h2 className="mb-4 title_eat">Bienvenido a San Pedro</h2>
+        <h2 className="mb-4 featured-title">Bienvenido a San Pedro</h2>
         <p className='fs-5' style={paragraphStyle}>
           En San Pedro, llevamos ofreciendo calidad y tradición gastronómica junto al mar desde 1932. Somos un restaurante especializado en mariscos y carnes, con una selección cuidadosamente elaborada de los mejores platos de la región.
         </p>
