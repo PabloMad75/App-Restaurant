@@ -1,3 +1,4 @@
+import { Message } from '../components/message';
 import '../css/navbar.css'
 export const Home = () => {
   return (
@@ -42,6 +43,7 @@ export const Home = () => {
           </button>
         </div>
       </div>
+      <Message />
     </main>
   );
 };

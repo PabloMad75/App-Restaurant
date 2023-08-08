@@ -1,0 +1,18 @@
+.image-back {
+  margin-top: 4px;
+  background-image: url("/background/mesa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 450px;
+  color: white; /* Color del texto, en este caso, blanco */
+  padding: 20px; /* Ajusta el padding según tus necesidades */
+  text-align: center; /* Centrar el contenido del artículo */
+}
+
+.gradient-background {
+  /* Estilo para el contenedor del texto con fondo degradado */
+  background-image: linear-gradient(to right, #53a5e6, #8f6bbe);
+  padding: 20px; /* Ajusta el padding según tus necesidades */
+  border-radius: 10px; /* Añadimos bordes redondeados para dar un mejor aspecto */
+}
