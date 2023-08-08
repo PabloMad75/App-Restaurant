@@ -1,4 +1,5 @@
 import { Message } from '../components/message';
+import { Products } from '../components/products';
 import '../css/navbar.css'
 export const Home = () => {
   return (
@@ -44,6 +45,7 @@ export const Home = () => {
         </div>
       </div>
       <Message />
+      <Products />
     </main>
   );
 };
