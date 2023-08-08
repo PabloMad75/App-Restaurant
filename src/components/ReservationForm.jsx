@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import 'flatpickr/dist/themes/material_blue.css';
 import { Spanish } from 'flatpickr/dist/l10n/es';
 
 export const ReservationForm = () => {
@@ -22,6 +23,8 @@ export const ReservationForm = () => {
   }, []);
 
   return (
+    <>
+    <main>
     <div className="container mt-4">
       <div className="row">
         <div className="col-lg-12">
@@ -67,7 +70,7 @@ export const ReservationForm = () => {
             <div className="row mt-4">
               <div className="col-md-6 mb-3">
                 <label htmlFor="fechaReserva">Fecha de Reserva</label>
-                <input type="text" className="form-control date-input" id="fechaReserva" placeholder="Fecha de Reserva" />
+                <input type="text" className="form-control date-input" id="fechaReserva" placeholder="Fecha de Reserva" required/>
               </div>
               <div className="col-md-6 mb-3">
                 <label htmlFor="horarioAtencion">Horario de Atención</label>
@@ -87,7 +90,7 @@ export const ReservationForm = () => {
             <div className="row">
               <div className="col-md-4 mb-3">
                 <label htmlFor="ocasionEspecial">Motivo reserva:</label>
-                <select className="form-control" id="ocasionEspecial">
+                <select className="form-control" id="ocasionEspecial" required>
                   <option value="">Motivo reserva</option>
                   <option value="Almuerzo">Almuerzo</option>
                   <option value="Cena">Cena</option>
@@ -97,20 +100,20 @@ export const ReservationForm = () => {
                 </select>
               </div>
               <div className="col-md-4 mb-3">
-                <label htmlFor="metodoPago">Método de Pago</label>
-                <select className="form-control" id="metodoPago">
-                  <option value="">Seleccione un método</option>
-                  <option value="tarjeta">Tarjeta de Crédito</option>
-                  <option value="cheque">Cheque</option>
-                  <option value="efectivo">Efectivo</option>
-                </select>
-              </div>
-              <div className="col-md-4 mb-3">
                 <label htmlFor="sectorFumadores">Sector Fumadores</label>
                 <select className="form-control" id="sectorFumadores" required>
                   <option value="">Seleccione una opción</option>
                   <option value="si">Sí</option>
                   <option value="no">No</option>
+                </select>
+              </div>
+              <div className="col-md-4 mb-3">
+                <label htmlFor="metodoPago">Método de Pago</label>
+                <select className="form-control" id="metodoPago" required>
+                  <option value="">Seleccione un método</option>
+                  <option value="tarjeta">Tarjeta de Crédito</option>
+                  <option value="cheque">Cheque</option>
+                  <option value="efectivo">Efectivo</option>
                 </select>
               </div>
             </div>
@@ -134,5 +137,7 @@ export const ReservationForm = () => {
         </div>
       </div>
     </div>
+    </main>
+    </>
   );
 };
