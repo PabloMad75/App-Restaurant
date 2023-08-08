@@ -1,5 +1,5 @@
-import { Message } from '../components/message';
-import { Products } from '../components/products';
+import { Message } from '../components/message.jsx';
+import { Products } from '../components/products.jsx';
 import '../css/navbar.css'
 export const Home = () => {
   return (
