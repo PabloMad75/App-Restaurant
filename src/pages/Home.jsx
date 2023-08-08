@@ -1,5 +1,6 @@
-import { Products } from '../components/products.jsx';
-import { Message } from '../components/message.jsx';
+import { Message } from '../components/Message';
+import { Products } from '../components/Products';
+
 import '../css/navbar.css'
 export const Home = () => {
   return (
