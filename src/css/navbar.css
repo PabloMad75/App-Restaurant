@@ -12,7 +12,7 @@
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: white;
-  background-color: #8EA7E9;
+  background-color: #4477CE;
   border-radius: 25px;
   /* transition: color 0.3s; */
 }

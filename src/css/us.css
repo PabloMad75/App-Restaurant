@@ -32,7 +32,7 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.55);
   border-radius: 15px;
   padding-bottom: 20px;
-  background-color: #8EA7E9;
+  background-color: #4477CE;
 }
 
 .main__product.custom-background{
@@ -48,6 +48,9 @@
   text-transform: uppercase;
 }
 
+.featured-title.us{
+  color: #4477CE;
+}
 .main__product img {
   max-width: 100%;
   height: auto;
