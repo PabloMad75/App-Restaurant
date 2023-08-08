@@ -35,11 +35,11 @@
   background-color: #4477CE;
 }
 
-.main__product.custom-background{
+.main__product.custom-background {
   background-color: #FF9B9B;
 }
 
-.featured-title{
+.featured-title {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -48,16 +48,17 @@
   text-transform: uppercase;
 }
 
-.featured-title.us{
+.featured-title.us {
   color: #4477CE;
 }
+
 .main__product img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.title_eat{
+.title_eat {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
@@ -69,6 +70,7 @@
   padding: 0 10px;
   text-align: justify;
 }
+
 /* textAlign: 'justify' */
 /* Media query para cambiar la cantidad de imágenes por fila en tamaños específicos */
 @media (min-width: 576px) {
