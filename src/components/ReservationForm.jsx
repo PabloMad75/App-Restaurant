@@ -4,7 +4,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import 'flatpickr/dist/themes/material_blue.css';
 import { Spanish } from 'flatpickr/dist/l10n/es';
 import { Message } from './Message';
-import { verificarYCrearColeccion, guardarDocumentoEnColeccion } from './firebaseUtils';
+import { verificarYCrearColeccion, guardarDocumentoEnColeccion } from '../config/firebaseUtils';
 
 export const ReservationForm = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -36,13 +36,16 @@ export const ReservationForm = () => {
       movil: formData.get('movil'),
       fechaReserva: formData.get('fechaReserva'),
       horarioAtencion: formData.get('horarioAtencion'),
-      adultos: parseInt(formData.get('adultos')),
-      ninos: parseInt(formData.get('ninos')),
+      adultos: parseInt(formData.get('adultos'), 10), // Parse integer with base 10
+      ninos: parseInt(formData.get('ninos'), 10), // Parse integer with base 10
       ocasionEspecial: formData.get('ocasionEspecial'),
       sectorFumadores: formData.get('sectorFumadores'),
       metodoPago: formData.get('metodoPago'),
     };
-
+    
+    console.log('Form Data:', formData);
+    console.log('Reserva Data:', reservaData);
+  
     await verificarYCrearColeccion('reservas');
 
     try {
