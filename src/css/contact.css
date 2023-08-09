@@ -52,6 +52,12 @@
   border-radius: 4px;
 }
 
+.form-reserv{
+  background-color: #FFDDCC;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.55);
+}
 
 /* Estilos para el botón
 .btn-primary {
