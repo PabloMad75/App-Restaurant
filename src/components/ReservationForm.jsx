@@ -4,6 +4,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import 'flatpickr/dist/themes/material_blue.css';
 import { Spanish } from 'flatpickr/dist/l10n/es';
 import { Message } from './Message';
+import { verificarYCrearColeccion, guardarDocumentoEnColeccion } from '../config/firebaseUtils';
 
 export const ReservationForm = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -17,11 +18,40 @@ export const ReservationForm = () => {
       altInput: true,
       altFormat: 'j F, Y',
       dateFormat: 'Y-m-d',
-      locale: Spanish, // Corregir aquí para establecer el idioma en español
+      locale: Spanish,
       minDate: 'today',
       onChange: handleDateChange,
     });
   }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    const reservaData = {
+      nombre: formData.get('nombre'),
+      apellido: formData.get('apellido'),
+      correo: formData.get('correo'),
+      movil: formData.get('movil'),
+      fechaReserva: formData.get('fechaReserva'),
+      horarioAtencion: formData.get('horarioAtencion'),
+      adultos: parseInt(formData.get('adultos')),
+      ninos: parseInt(formData.get('ninos')),
+      ocasionEspecial: formData.get('ocasionEspecial'),
+      sectorFumadores: formData.get('sectorFumadores'),
+      metodoPago: formData.get('metodoPago'),
+    };
+
+    await verificarYCrearColeccion('reservas');
+
+    try {
+      await guardarDocumentoEnColeccion('reservas', reservaData);
+      console.log('Reserva guardada en la base de datos');
+    } catch (error) {
+      console.error('Error al guardar la reserva:', error);
+    }
+  };
 
   return (
     <>
@@ -29,15 +59,7 @@ export const ReservationForm = () => {
       <div className="container mt-4">
         <div className="row">
           <div className="col-lg-12">
-            <form className="form-reserv">
-              {/* <div className="row">
-              <div className="col-12 text-center">
-                <img src="/public/background/verdu.jpg" alt="Logo del restaurante" className="img-fluid" />
-                <div className="centered-title">
-                  San Pedro Restaurant
-                </div>
-              </div>
-            </div> */}
+            <form className="form-reserv" onSubmit={handleSubmit}>
               <div className="form-row mt-4">
                 <div className="col">
                   <h2>Reserva de Atención</h2>
@@ -130,8 +152,8 @@ export const ReservationForm = () => {
               </div>
               <div className="row mt-4">
                 <div className="col d-flex justify-content-around">
-                  <button type="submit" className="btn btn-primary btn-lg ">Grabar Reserva</button>
-                  <button type="button" className="btn btn-secondary btn-lg ">Cancelar</button>
+                  <button type="submit" className="btn btn-primary btn-lg">Grabar Reserva</button>
+                  <button type="button" className="btn btn-secondary btn-lg">Cancelar</button>
                 </div>
               </div>
             </form>
