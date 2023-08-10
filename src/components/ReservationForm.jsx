@@ -1,10 +1,14 @@
 import React, { useState, useRef } from 'react';
-import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
-import 'flatpickr/dist/themes/material_blue.css';
-import { Spanish } from 'flatpickr/dist/l10n/es';
+// import flatpickr from 'flatpickr';
+// import 'flatpickr/dist/flatpickr.min.css';
+// import 'flatpickr/dist/themes/material_blue.css';
+// import { Spanish } from 'flatpickr/dist/l10n/es';
 import { Message } from './Message';
-import { verificarYCrearColeccion, guardarDocumentoEnColeccion } from '../config/firebaseUtils';
+import { DocumentList } from '../pages/DocumentList';
+import { verificarYCrearColeccion, guardarDocumentoEnColeccion} from '../config/firebaseUtils';
+import { obtenerDocumentosDeColeccion } from '../config/firebaseUtils';
+
+import Swal from 'sweetalert2';
 
 export const ReservationForm = () => {
   const nombreRef = useRef(null);
@@ -18,6 +22,10 @@ export const ReservationForm = () => {
   const ocasionEspecialRef = useRef(null);
   const sectorFumadoresRef = useRef(null);
   const metodoPagoRef = useRef(null);
+
+  const [documentos, setDocumentos] = useState(); // Agregar el estado aquí
+  const [showDocumentList, setShowDocumentList] = useState(false); // Estado para mostrar DocumentList
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -44,8 +52,26 @@ export const ReservationForm = () => {
       await guardarDocumentoEnColeccion('reservas', reservaData);
       console.log('Reserva guardada en la base de datos');
       clearForm();
+      setShowDocumentList(true); // Mostrar DocumentList después de enviar el formulario
+            // Actualizar la lista de documentos después de agregar una reserva exitosamente
+            const nuevosDocumentosObtenidos = await obtenerDocumentosDeColeccion('reservas');
+            setDocumentos(nuevosDocumentosObtenidos);
+      // // Mostrar mensaje de éxito
+      // Swal.fire({
+      //   icon: 'success',
+      //   title: '¡Reserva guardada con éxito!',
+      //   showConfirmButton: false,
+      //   timer: 2000,
+      // });
     } catch (error) {
       console.error('Error al guardar la reserva:', error);
+      // Mostrar mensaje de error
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al guardar la reserva',
+        text: 'Ha ocurrido un error al guardar la reserva. Por favor, inténtalo nuevamente.',
+        confirmButtonText: 'Aceptar',
+      });
     }
   };
 
@@ -111,7 +137,7 @@ export const ReservationForm = () => {
                   <input type="date" className="form-control date-input" id="fechaReserva" ref={fechaReservaRef} required />
                 </div>
                 <div className="col-md-3 mb-3">
-                  <label htmlFor="horarioAtencion">Horario de Atención</label>
+                  <label htmlFor="horarioAtencion">Horario:</label>
                   <input type="time" className="form-control" id="horarioAtencion" ref={horarioAtencionRef} required />
                 </div>
                 <div className="col-md-3 mb-3">
@@ -173,6 +199,7 @@ export const ReservationForm = () => {
           </div>
         </div>
       </div>
+      {showDocumentList && <DocumentList />} {/* Mostrar DocumentList si showDocumentList es true */}
     </>
   );
 };

@@ -6,6 +6,7 @@ export const Us = () => {
   };
   return (
     <>
+    <main>
       <div className="container mt-4">
         <h1 className="mb-4 featured-title us">San Pedro Restaurant.</h1>
         <p className='fs-5' style={paragraphStyle}>
@@ -96,6 +97,7 @@ export const Us = () => {
           </p>
         </article>
       </div>
+    </main>
     </>
   )
 }
