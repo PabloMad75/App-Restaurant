@@ -3,6 +3,7 @@ import { Home } from "../pages/Home";
 import { Us } from "../pages/Us";
 import { Schedule } from "../pages/Schedule";
 import { Contact } from "../pages/Contact";
+// import { ListReservation} from "../pages/ListReservation"
 import { NotFound } from "../pages/NotFound";
 
 export const RouterWeb = () => {
@@ -13,6 +14,7 @@ export const RouterWeb = () => {
       <Route path="/nosotros" element={<Us/>}/>
       <Route path="/reservas" element={<Schedule/>}/>
       <Route path="/contacto" element={<Contact/>}/>
+      {/* <Route path="/listado" element={<ListReservation/>}/> */}
       <Route path="*" element={<NotFound/>} />
     </Routes>
     </>

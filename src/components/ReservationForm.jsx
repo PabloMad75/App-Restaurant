@@ -6,8 +6,6 @@ import { Spanish } from 'flatpickr/dist/l10n/es';
 import { Message } from './Message';
 import { verificarYCrearColeccion, guardarDocumentoEnColeccion } from '../config/firebaseUtils';
 
-
-
 export const ReservationForm = () => {
   const nombreRef = useRef(null);
   const apellidoRef = useRef(null);
@@ -72,7 +70,6 @@ export const ReservationForm = () => {
     }
   };
 
-
   return (
     <>
       <Message />
@@ -103,8 +100,6 @@ export const ReservationForm = () => {
                   <input type="tel" className="form-control" id="movil" ref={movilRef} required />
                 </div>
               </div>
-
-
               <div className="row mt-4">
                 <div className="col">
                   <h2>Detalles de la Reserva</h2>
@@ -128,7 +123,6 @@ export const ReservationForm = () => {
                   <input type="number" className="form-control" id="ninos" min="0" ref={ninosRef} required />
                 </div>
               </div>
-
               <div className="row">
                 <div className="col-md-4 mb-3">
                   <label htmlFor="ocasionEspecial">Motivo reserva:</label>

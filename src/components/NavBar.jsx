@@ -4,7 +4,7 @@ import '../css/navbar.css'
 export const NavBar = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary p-3 fs-3">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary p-3 fs-4">
         <div className="container-fluid">
           <NavLink className="navbar-brand me-2 navbar-text fs-3" to="/">
             <img src="/spatula.svg" alt="Logo" width="80" height="74" className="d-inline-block" />
@@ -14,7 +14,7 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul className="navbar-nav gap-3">
+            <ul className="navbar-nav gap-2">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
                   <i className="fa-solid fa-house"></i> Inicio
@@ -35,6 +35,11 @@ export const NavBar = () => {
                   <i className="fa-solid fa-envelope-circle-check"></i> Contáctanos
                 </NavLink>
               </li>
+              {/* <li className="nav-item">
+                <NavLink className="nav-link" to="/listado">
+                  <i className="fa-solid fa-table-list"></i> Listado
+                </NavLink>
+              </li> */}
             </ul>
           </div>
         </div>
