@@ -1,14 +1,9 @@
 import React, { useState, useRef } from 'react';
-// import flatpickr from 'flatpickr';
-// import 'flatpickr/dist/flatpickr.min.css';
-// import 'flatpickr/dist/themes/material_blue.css';
-// import { Spanish } from 'flatpickr/dist/l10n/es';
 import { Message } from './Message';
-import { DocumentList } from '../pages/DocumentList';
-import { verificarYCrearColeccion, guardarDocumentoEnColeccion} from '../config/firebaseUtils';
+import { verificarYCrearColeccion, guardarDocumentoEnColeccion } from '../config/firebaseUtils';
 import { obtenerDocumentosDeColeccion } from '../config/firebaseUtils';
-
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 export const ReservationForm = () => {
   const nombreRef = useRef(null);
@@ -47,22 +42,22 @@ export const ReservationForm = () => {
     console.log('Reserva Data:', reservaData);
 
     await verificarYCrearColeccion('reservas');
-
     try {
       await guardarDocumentoEnColeccion('reservas', reservaData);
       console.log('Reserva guardada en la base de datos');
       clearForm();
       setShowDocumentList(true); // Mostrar DocumentList después de enviar el formulario
-            // Actualizar la lista de documentos después de agregar una reserva exitosamente
-            const nuevosDocumentosObtenidos = await obtenerDocumentosDeColeccion('reservas');
-            setDocumentos(nuevosDocumentosObtenidos);
-      // // Mostrar mensaje de éxito
-      // Swal.fire({
-      //   icon: 'success',
-      //   title: '¡Reserva guardada con éxito!',
-      //   showConfirmButton: false,
-      //   timer: 2000,
-      // });
+      // Actualizar la lista de documentos después de agregar una reserva exitosamente
+      const nuevosDocumentosObtenidos = await obtenerDocumentosDeColeccion('reservas');
+      setDocumentos(nuevosDocumentosObtenidos);
+
+      // Mostrar mensaje de éxito
+      Swal.fire({
+        icon: 'success',
+        title: '¡Reserva guardada con éxito!',
+        showConfirmButton: false,
+        timer: 2000,
+      });
     } catch (error) {
       console.error('Error al guardar la reserva:', error);
       // Mostrar mensaje de error
@@ -87,7 +82,6 @@ export const ReservationForm = () => {
     ocasionEspecialRef.current.value = '';
     sectorFumadoresRef.current.value = '';
     metodoPagoRef.current.value = '';
-    // Clear other fields as needed
 
     // Clear the confirmation checkbox
     const confirmacionCheckbox = document.getElementById('confirmacion');
@@ -99,6 +93,13 @@ export const ReservationForm = () => {
   return (
     <>
       <Message />
+      <div className="container">
+        <div className="col d-flex mt-4 justify-content-md-end">
+          <Link to="/listado" className="btn btn-primary btn-lg">
+            Ir al Listado de Reservas
+          </Link>
+        </div>
+      </div>
       <div className="container mt-4">
         <div className="row">
           <div className="col-lg-12">
@@ -156,7 +157,7 @@ export const ReservationForm = () => {
                     <option value="">Motivo reserva</option>
                     <option value="Almuerzo">Almuerzo</option>
                     <option value="Cena">Cena</option>
-                    <option value="Cumpleanos">Cumpleaños</option>
+                    <option value="Cumpleaños">Cumpleaños</option>
                     <option value="Aniversario">Aniversario</option>
                     <option value="Otro">Otro Motivo</option>
                   </select>
@@ -192,14 +193,13 @@ export const ReservationForm = () => {
               <div className="row mt-4">
                 <div className="col d-flex justify-content-around">
                   <button type="submit" className="btn btn-primary btn-lg">Grabar Reserva</button>
-                  <button type="reset" className="btn btn-secondary btn-lg">Cancelar</button>
+                  <button type="reset" className="btn btn-danger btn-lg">Cancelar</button>
                 </div>
               </div>
             </form>
           </div>
         </div>
       </div>
-      {showDocumentList && <DocumentList />} {/* Mostrar DocumentList si showDocumentList es true */}
     </>
   );
 };
