@@ -28,20 +28,7 @@ Lo anterior, para crear una experiencia atractiva y funcional.
 
 ## Características Opcionales 🌟
 
-1. **Reserva de Mesa 📅**
-   - Componente interactivo que permita a los usuarios seleccionar una hora y fecha específica para reservar una mesa.
-   - Confirmación de la reserva y notificación por correo electrónico.
 
-2. **Menú Completo del Restaurante 🍔**
-   - Sección con el menú completo del restaurante, organizado por categorías (entradas, platos principales, postres, etc.).
-   - Cada platillo debe incluir una descripción, imagen y precio.
-
-3. **Adaptación para Móviles 📱**
-   - Garantizar que la aplicación sea completamente funcional y se visualice correctamente en dispositivos móviles.
-
-4. **Blog con Artículos 📚**
-   - Sección del sitio web dedicada a un blog, donde se publicarán artículos relacionados con el restaurante.
-   - Cada artículo debe tener una imagen destacada, título, fecha de publicación y contenido completo del artículo.
 
 ## Captura de imagen :camera:
 
